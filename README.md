@@ -18,11 +18,13 @@
       -h, --help        show this help message and exit
 
 
+Example 1: compute correlations of aligners to different measures of complexity.
 ```
     python cross_validation.py complexity.txt 1 perf-samples/ Prec-100 Rec-100
 ```
 
-Compute prediction errors based on 50% training 50% testing
+Example 2: compute prediction errors of aligners' prediction of alignment accuracy,
+based on 50% training 50% testing.
 ```
     python cross_validation.py complexity.txt 0.5 perf-samples/ Prec-100 Rec-100
 ```
