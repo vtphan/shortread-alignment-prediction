@@ -18,13 +18,13 @@
       -h, --help        show this help message and exit
 
 
-Sample scenario:
+```
+    python cross_validation.py complexity.txt 1 perf-samples/ Prec-100 Rec-100
+```
 
-* Using 50% of data for training, 50% for testing.
-* Get correlation of 100% of data.
+Compute prediction errors based on 50% training 50% testing
+```
+    python cross_validation.py complexity.txt 0.5 perf-samples/ Prec-100 Rec-100
+```
 
-Example:
-
-    python cross_validation.py complexity.txt 0.5 mut0.001/100/ Prec-100 Rec-100
-    python cross_validation.py complexity.txt 1 mut0.003/100/ Prec-100 Rec-100
-
+To compute different measures of genome complexity, go here: https://github.com/vtphan/sequence-complexity

@@ -10,7 +10,7 @@ import os
 # y = slope * x + intercept
 from scipy import stats
 
-IGNORE = [] #['CM000777.fasta']
+IGNORE = []
 
 BIAS_TRAIN_DATA = []
 
@@ -123,7 +123,10 @@ if __name__ == '__main__':
       (len(complexity_data), training_size, TRAIN_FRAC, len(complexity_data),len(IGNORE), ITER))
 
 
-   complexity_keys = ['D12', 'D25', 'D50', 'D75', 'D100', 'D200', 'R12', 'R25', 'R50', 'R75', 'R100', 'R200', 'D', 'I' ]
+   complexity_keys = [ 'D12', 'D25', 'D50', 'D75', 'D100', 'R12', 'R25', 'R50', 'R75', 'R100' ]
+   # complexity_keys = ['D12', 'D25', 'D50', 'D75', 'D100', 'D200', 'R12', 'R25', 'R50', 'R75', 'R100', 'R200', 'D', 'I' ]
+   # complexity_keys = ['D12', 'D25', 'D35', 'D40', 'D50', 'D75', 'D100']
+   # complexity_keys = ['D25', 'D50', 'D75', 'D100']
 
    for perf_key in args['performance_keys']:
       run(args, complexity_keys, perf_key, training_size, ITER)
