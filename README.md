@@ -7,7 +7,12 @@ Several measures of genome complexity, including D_k, D, and I complexity measur
 fraction of training set (between 0 and 1).  The set of genomic sequences will be used for training
 and testing.
 
-## Predict performance of short-read aligners
+## Dependency
+
++ Python
++ Python Scipy
+
+## Usage
 
     usage: cross_validation.py [-h]
                                complexity training_portion dir performance_keys
