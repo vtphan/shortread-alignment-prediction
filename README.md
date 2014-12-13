@@ -1,8 +1,8 @@
 This Python program does two things:
 
-(1) compute correlations between aligners' performance and genome complexity.  To do this, users must provide (a) the performance of aligners on a set of genomic sequences and (b) the complexity of the sequences. To compute complexity of sequences, use this program: https://github.com/vtphan/sequence-complexity
+1. Compute correlations between aligners' performance and genome complexity.  To do this, users must provide (a) the performance of aligners on a set of genomic sequences and (b) the complexity of the sequences. To compute complexity of sequences, use this program: https://github.com/vtphan/sequence-complexity
 
-(2) train and predict aligners' performance based on complexity.  Users must also specify the
+2. Train and predict aligners' performance based on complexity.  Users must also specify the
 fraction of training set (between 0 and 1).  The set of genomic sequences will be used for training
 and testing.
 
