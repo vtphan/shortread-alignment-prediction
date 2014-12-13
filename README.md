@@ -1,3 +1,12 @@
+This Python script does two things:
+
+(1) compute correlations between aligners' performance and genome complexity.  To do this, users must provide (a) the performance of aligners on a set of genomic sequences and (b) the complexity of the sequnces.
+Several measures of genome complexity, including D_k, can be computed using this script: https://github.com/vtphan/sequence-complexity
+
+(2) train and predict aligners' performance based on complexity.  Users must also specify the
+fraction of training set (between 0 and 1).  The set of genomic sequences will be used for training
+and testing.
+
 ## Predict performance of short-read aligners
 
     usage: cross_validation.py [-h]
@@ -29,4 +38,3 @@ based on 50% training 50% testing.
     python cross_validation.py complexity.txt 0.5 perf-samples/ Prec-100 Rec-100
 ```
 
-To compute different measures of genome complexity, go here: https://github.com/vtphan/sequence-complexity
